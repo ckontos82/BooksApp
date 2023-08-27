@@ -12,3 +12,11 @@ This is a Spring Boot application for managing a list of books. Users can add, u
 - **Maven**: For dependency management.
 - **HTML/CSS**: For frontend views.
 - **JavaScript**: For client-side validation.
+
+## Screenshots
+
+Here are some screenshots demonstrating the functionalities of the application:
+
+![List of Books](./images/list.png)
+![Update Book](./images/update.png)
+![Validation](./images/validate.png)
