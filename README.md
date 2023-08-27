@@ -11,6 +11,7 @@ This is a Spring Boot application for managing a list of books. Users can add, u
 - **H2 Database**: As the in-memory database for storing book records.
 - **Maven**: For dependency management.
 - **HTML/CSS**: For frontend views.
+- **Bootstrap**: For styling and layout.
 - **JavaScript**: For client-side validation.
 
 ## Architectural Pattern
