@@ -13,6 +13,10 @@ This is a Spring Boot application for managing a list of books. Users can add, u
 - **HTML/CSS**: For frontend views.
 - **JavaScript**: For client-side validation.
 
+## Architectural Pattern
+
+The application strictly adheres to the Model-View-Controller (MVC) architectural pattern, which allows for modular and maintainable code structure. It makes use of Spring's annotations to define Controllers, Services, and Repositories.
+
 ## Screenshots
 
 Here are some screenshots demonstrating the functionalities of the application:
