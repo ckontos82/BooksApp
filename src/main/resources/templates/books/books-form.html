@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Add Book</title>
+    <script>
+        function validateForm() {
+            let title = document.forms["bookForm"]["title"].value;
+            let price = document.forms["bookForm"]["price"].value;
+            if (title === "" || price === "") {
+                alert("Title and Price cannot be empty.");
+                return false;
+            }
+            if (isNaN(price) || price <= 0) {
+                alert("Price must be a positive number.");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+<div class="container">
+    <h3 class="mt-3">Book List</h3>
+
+    <p class="h4 mb-4">Save Book</p>
+
+    <form action="#" th:action="@{/books/save}"
+          th:object="${book}" method="POST" name="bookForm" onsubmit="return validateForm()">
+
+        <input type="hidden" th:field="*{id}">
+        <input type="text" th:field="*{title}"
+               class="form-control mb-4 w-25" placeholder="Title">
+        <input type="text" th:field="*{author}"
+               class="form-control mb-4 w-25" placeholder="Author">
+        <input type="text" th:field="*{isbn}"
+               class="form-control mb-4 w-25" placeholder="ISBN">
+        <input type="text" th:field="*{price}"
+               class="form-control mb-4 w-25" placeholder="Price">
+
+        <button type="submit" class="btn btn-info col-2">Save</button>
+    </form>
+    <hr>
+    <a th:href="@{/books/list}">Back to books list</a>
+</div>
+</body>
+</html>
