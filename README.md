@@ -11,7 +11,12 @@ This is a Spring Boot application for managing a list of books. Users can add, u
 - **H2 Database**: As the in-memory database for storing book records.
 - **Maven**: For dependency management.
 - **HTML/CSS**: For frontend views.
+- **Bootstrap**: For styling and layout.
 - **JavaScript**: For client-side validation.
+
+## Architectural Pattern
+
+The application strictly adheres to the Model-View-Controller (MVC) architectural pattern, which allows for modular and maintainable code structure. It makes use of Spring's annotations to define Controllers, Services, and Repositories.
 
 ## Screenshots
 
