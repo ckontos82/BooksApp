@@ -15,7 +15,13 @@
 
 <div class="container">
 
-    <h3 class="mt-3">Books list</h3>
+    <div class="d-flex justify-content-between mt-3">
+        <h3>Books list</h3>
+        <form action="/logout" method="post" th:action="@{/logout}">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+            <button type="submit" class="btn btn-danger">Log Out</button>
+        </form>
+    </div>
     <hr>
 
     <a th:href="@{/books/addBook}"
