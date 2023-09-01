@@ -1,12 +1,13 @@
 package gr.aueb.cf.booksappfinal.dao;
 
 import gr.aueb.cf.booksappfinal.entities.Book;
-import org.springframework.data.jpa.repository.JpaRepository;
+import jakarta.validation.constraints.NotNull;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.lang.Nullable;
 
 import java.util.List;
 
-public interface BookDAO extends JpaRepository<Book, Long> {
-
+public interface BookDAO extends CrudRepository<Book, Long> {
     List<Book> findAll();
 
 }
