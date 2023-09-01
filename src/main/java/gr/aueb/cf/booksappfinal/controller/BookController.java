@@ -44,7 +44,14 @@ public class BookController {
         Book book = bookService.findById(id);
         model.addAttribute("book", book);
 
-        return "books/books-form";
+        return "books/update-form";
+    }
+
+    @PostMapping("/update")
+    public String updateBook(@ModelAttribute("book") Book book) {
+        bookService.updateBook(book);
+
+        return "redirect:/books/list";
     }
 
     @GetMapping("/delete")

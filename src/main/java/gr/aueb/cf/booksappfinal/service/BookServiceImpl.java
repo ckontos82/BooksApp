@@ -21,11 +21,11 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book findById(Long id) {
-        Optional<Book> result = bookDAO.findById(id);
+        Book result = bookDAO.findById(id);
         Book book = null;
 
-        if (result.isPresent()) {
-            book = result.get();
+        if (result != null) {
+            book = result;
         } else {
             throw new RuntimeException("Book not found.");
         }
@@ -41,5 +41,10 @@ public class BookServiceImpl implements BookService {
     @Override
     public void deleteById(Long id) {
         bookDAO.deleteById(id);
+    }
+
+    @Override
+    public void updateBook(Book book) {
+        bookDAO.update(book);
     }
 }
