@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>404 Error - Page Not Found</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+          integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1 class="display-1 text-center">Oops!</h1>
+                <h2 class="display-4 text-center">Error</h2>
+                <div class="error-details text-center">
+                    Sorry, the requested page could not be found.
+                </div>
+                <div class="error-actions mt-4 text-center">
+                    <a th:href="@{/books/list}" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-home"></span>
+                        Take Me Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
