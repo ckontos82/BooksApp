@@ -5,7 +5,6 @@ import gr.aueb.cf.booksappfinal.entities.Book;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class BookServiceImpl implements BookService {
@@ -22,7 +21,7 @@ public class BookServiceImpl implements BookService {
     @Override
     public Book findById(Long id) {
         Book result = bookDAO.findById(id);
-        Book book = null;
+        Book book;
 
         if (result != null) {
             book = result;
@@ -31,6 +30,11 @@ public class BookServiceImpl implements BookService {
         }
 
         return book;
+    }
+
+    @Override
+    public List<Book> findByTitleContaining(String title) {
+        return bookDAO.findByTitleContaining(title);
     }
 
     @Override

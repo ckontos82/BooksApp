@@ -24,6 +24,18 @@ public class BookController {
         return "books/list-books";
     }
 
+    @GetMapping("/search_by_title")
+    public String search() {
+       return "books/search-by-title";
+    }
+
+    @PostMapping("/search_by_title")
+    public String searchBooks(@RequestParam("title") String title, Model model) {
+        List<Book> books = bookService.findByTitleContaining(title);
+        model.addAttribute("books", books);
+        return "books/searchResults";
+    }
+
     @GetMapping("/addBook")
     public String addBook(Model model) {
         Book book = new Book();

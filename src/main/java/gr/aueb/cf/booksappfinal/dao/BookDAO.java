@@ -7,6 +7,7 @@ import java.util.List;
 public interface BookDAO {
     List<Book> findAll();
     Book findById(Long id);
+    List<Book> findByTitleContaining(String title);
     void save(Book book);
     void deleteById(Long id);
     void update(Book book);

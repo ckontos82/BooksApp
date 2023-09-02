@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+          integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Search Books by Title</h1>
+    <form action="/books/search_by_title" method="post" class="mt-4">
+        <div class="form-group">
+            <label for="title" class="form-label">Book Title:</label>
+            <input type="text" id="title" name="title" class="form-control">
+        </div>
+        <input type="hidden" name="_csrf" th:value="${_csrf.token}"/>
+        <button type="submit" class="btn btn-primary mt-2">Search</button>
+    </form>
+    <a th:href="@{/books/list}" class="btn btn-primary mt-5">
+        <span class="glyphicon glyphicon-home"></span>
+        Take Me Home
+    </a>
+</div>
+</body>
+</html>

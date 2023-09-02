@@ -29,6 +29,13 @@ public class BookDAOImpl implements BookDAO {
     }
 
     @Override
+    public List<Book> findByTitleContaining(String title) {
+        TypedQuery<Book> query = em.createQuery("SELECT b FROM Book b WHERE LOWER(b.title) LIKE lower(:title)", Book.class);
+        query.setParameter("title", "%" + title + "%");
+        return query.getResultList();
+    }
+
+    @Override
     @Transactional
     public void save(Book book) {
         em.persist(book);
