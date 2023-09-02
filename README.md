@@ -25,5 +25,6 @@ Here are some screenshots demonstrating the functionalities of the application:
 
 ![List of Books](./images/list.png)
 ![Update Book](./images/update.png)
+![Find Book By Title](./images/find-title.png)
 ![Validation](./images/validate.png)
 ![Logout](./images/logout.png)
