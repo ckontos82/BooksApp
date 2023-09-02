@@ -40,12 +40,6 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String isbn, Double price) {
-        this.title = title;
-        this.isbn = isbn;
-        this.price = price;
-    }
-
     public Long getId() {
         return id;
     }

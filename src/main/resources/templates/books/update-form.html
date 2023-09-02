@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Add Book</title>
     <script>
@@ -45,7 +43,10 @@
         <button type="submit" class="btn btn-info col-2">Update</button>
     </form>
     <hr>
-    <a th:href="@{/books/list}">Back to books list</a>
+    <a th:href="@{/books/list}" class="btn btn-primary">
+        <span class="glyphicon glyphicon-home"></span>
+        Take Me Home
+    </a>
 </div>
 </body>
 </html>
