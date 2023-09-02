@@ -2,12 +2,13 @@
 
 ## Description
 
-This is a Spring Boot application for managing a list of books. Users can add, update, and delete books, as well as view a list of all books.
+This is a Spring Boot application for managing a list of books. The application allows users to add, update, and delete books, as well as search for books by title for further modification.
 
 ## Technologies Used
 
 - **Spring Boot**: For the backend framework.
 - **Thymeleaf**: As the template engine for rendering HTML views.
+- **Spring Data JPA**: For data access, reducing boilerplate code related to database operations.
 - **H2 Database**: As the in-memory database for storing book records.
 - **Maven**: For dependency management.
 - **HTML/CSS**: For frontend views.
