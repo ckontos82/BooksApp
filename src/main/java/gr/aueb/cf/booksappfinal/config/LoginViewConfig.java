@@ -5,10 +5,9 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class ViewConfig implements WebMvcConfigurer {
+public class LoginViewConfig implements WebMvcConfigurer {
 
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/books/list").setViewName("/books/list-books");
         registry.addViewController("/login").setViewName("/books/login");
     }
 
