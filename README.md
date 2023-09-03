@@ -6,14 +6,14 @@ This is a Spring Boot application for managing a list of books. The application 
 
 ## Technologies Used
 
-- **Spring Boot**: For the backend framework.
-- **Thymeleaf**: As the template engine for rendering HTML views.
-- **Spring Data JPA**: For data access, reducing boilerplate code related to database operations.
-- **H2 Database**: As the in-memory database for storing book records.
-- **Maven**: For dependency management.
-- **HTML/CSS**: For frontend views.
-- **Bootstrap**: For styling and layout.
-- **JavaScript**: For client-side validation.
+- ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=flat-square&logo=spring-boot)
+- ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=thymeleaf&logoColor=white)
+- ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white)
+- ![H2 Database](https://img.shields.io/badge/H2_Database-1BA8D4?style=flat-square&logo=h2-database&logoColor=white)
+- ![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apache-maven&logoColor=white)
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
 ## Architectural Pattern
 
