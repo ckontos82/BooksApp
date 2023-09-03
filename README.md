@@ -6,8 +6,8 @@ This is a Spring Boot application for managing a list of books. The application 
 
 ## Technologies Used
 
-- ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=flat-square&logo=spring-boot&color=darkblue)
-- ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=thymeleaf&logoColor=darkgreen)
+- ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=flat-square&logo=spring-boot)
+- ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=thymeleaf&logoColor=white)
 - ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white)
 - ![H2 Database](https://img.shields.io/badge/H2_Database-1BA8D4?style=flat-square&logo=h2-database&logoColor=white)
 - ![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apache-maven&logoColor=white)
