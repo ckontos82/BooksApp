@@ -39,6 +39,8 @@
                class="form-control mb-4 w-25" placeholder="ISBN">
         <input type="text" th:field="*{price}"
                class="form-control mb-4 w-25" placeholder="Price">
+        <div><span th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></span></div>
+        <div><span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span></div>
 
         <button type="submit" class="btn btn-info col-2">Update</button>
     </form>

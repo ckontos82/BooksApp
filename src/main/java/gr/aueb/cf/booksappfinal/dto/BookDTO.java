@@ -1,10 +1,18 @@
 package gr.aueb.cf.booksappfinal.dto;
 
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
+
 public class BookDTO {
     private Long id;
+    @Size(min = 1, message = "Title cannot be empty")
     private String title;
     private String author;
     private String isbn;
+
+    @Positive(message = "Price must be a positive number")
+    @NotNull(message = "Price cannot be empty")
     private Double price;
 
     public BookDTO() {

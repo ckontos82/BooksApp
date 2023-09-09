@@ -39,13 +39,14 @@
                class="form-control mb-4 w-25" placeholder="ISBN">
         <input type="text" th:field="*{price}"
                class="form-control mb-4 w-25" placeholder="Price">
-
-        <button type="submit" class="btn btn-info col-2">Save</button>
+        <div><span th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></span></div>
+        <div><span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span></div>
+        <button type="submit" class="btn btn-info mt-3 col-2">Save</button>
     </form>
     <hr>
-    <a th:href="@{/books/search_by_title}" class="btn btn-primary">
+    <a th:href="@{/books/list}" class="btn btn-primary">
         <span class="glyphicon glyphicon-home"></span>
-        Search books by title
+        Take Me Home
     </a>
 </div>
 </body>

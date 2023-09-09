@@ -2,8 +2,10 @@ package gr.aueb.cf.booksappfinal.controller.book_controller;
 
 import gr.aueb.cf.booksappfinal.dto.BookDTO;
 import gr.aueb.cf.booksappfinal.service.BookService;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +28,15 @@ public class InsertBookController {
     }
 
     @PostMapping("/save")
-    public String saveBook(@ModelAttribute("book") BookDTO bookDTO) {
+    public String saveBook(@Valid @ModelAttribute("book") BookDTO bookDTO, BindingResult result, Model model) {
+        if (result.hasFieldErrors("price")) {
+            result.rejectValue("price", null, "Invalid price entered. Please enter a valid number.");
+        }
+
+        if (result.hasErrors()) {
+            return "books/books-form";
+        }
+
         bookService.save(bookDTO);
         return "redirect:/books/list";
     }

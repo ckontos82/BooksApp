@@ -1,7 +1,10 @@
 package gr.aueb.cf.booksappfinal.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Digits;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name="books")
@@ -12,6 +15,7 @@ public class Book {
     @Column(name="id")
     private Long id;
 
+    @Size(min = 1, message = "Title cannot be empty")
     @Column(name = "title")
     private String title;
 
@@ -19,6 +23,7 @@ public class Book {
     private String isbn;
 
     @Positive(message = "Price must be a positive number")
+    @NotNull(message = "Price cannot be empty")
     @Column(name = "price")
     private Double price;
 
