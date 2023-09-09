@@ -12,7 +12,6 @@ import java.util.List;
 public class BookDAOImpl implements BookDAO {
     private EntityManager em;
 
-    // Autowired not needed here
     public BookDAOImpl(EntityManager em) {
         this.em = em;
     }
