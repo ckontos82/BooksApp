@@ -67,9 +67,4 @@ public class BookController {
         bookService.deleteById(id);
         return "redirect:/books/list";
     }
-
-    @GetMapping("/error")
-    public String error() {
-        return "redirect:/books/list";
-    }
 }
