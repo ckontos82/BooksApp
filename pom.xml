@@ -10,7 +10,7 @@
     </parent>
     <groupId>gr.aueb.cf</groupId>
     <artifactId>BooksApp-Final</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-FINAL</version>
     <name>BooksApp-Final</name>
     <description>BooksApp-Final</description>
     <properties>

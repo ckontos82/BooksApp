@@ -4,6 +4,11 @@
 
 This is a Spring Boot application for managing a list of books. The application allows users to add, update, and delete books, as well as search for books by title for further modification.
 
+## Prerequisites
+
+- JDK 17
+- Spring Boot 3
+
 ## Role-Based Functionality
 
 The application incorporates Spring Security to implement role-based access control. Depending on the role assigned to a user, different functionalities are available:
@@ -19,6 +24,18 @@ The application incorporates Spring Security to implement role-based access cont
 - **Update Book**: Admins have the privilege to update the details of existing books, such as the title, author, or ISBN number.
 
 - **Delete Book**: Admins can remove books from the database.
+
+## Default Credentials
+
+### User:
+
+- **Username**: `user`
+- **Password**: `password`
+
+### Admin:
+
+- **Username**: `admin`
+- **Password**: `adminPass`
 
 ## Security Measures
 
