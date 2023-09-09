@@ -33,7 +33,8 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests(request ->
+        http.
+                authorizeHttpRequests(request ->
                         request
                                 .requestMatchers("/books/list").hasRole("USER")
                                 .requestMatchers("/books/search_by_title").hasRole("USER")

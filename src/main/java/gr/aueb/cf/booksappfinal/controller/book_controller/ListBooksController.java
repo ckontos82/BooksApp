@@ -1,4 +1,4 @@
-package gr.aueb.cf.booksappfinal.controller;
+package gr.aueb.cf.booksappfinal.controller.book_controller;
 
 import gr.aueb.cf.booksappfinal.dto.BookDTO;
 import gr.aueb.cf.booksappfinal.service.BookService;
