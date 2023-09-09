@@ -1,7 +1,6 @@
 package gr.aueb.cf.booksappfinal.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;

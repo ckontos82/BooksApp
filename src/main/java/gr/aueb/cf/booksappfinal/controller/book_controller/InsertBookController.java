@@ -28,9 +28,9 @@ public class InsertBookController {
     }
 
     @PostMapping("/save")
-    public String saveBook(@Valid @ModelAttribute("book") BookDTO bookDTO, BindingResult result, Model model) {
+    public String saveBook(@Valid @ModelAttribute("book") BookDTO bookDTO, BindingResult result) {
         if (result.hasFieldErrors("price")) {
-            result.rejectValue("price", null, "Invalid price entered. Please enter a valid number.");
+            result.rejectValue("price", "", "Invalid price entered. Please enter a valid number.");
         }
 
         if (result.hasErrors()) {

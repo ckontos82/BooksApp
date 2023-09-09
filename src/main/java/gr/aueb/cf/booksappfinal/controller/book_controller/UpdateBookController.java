@@ -27,7 +27,7 @@ public class UpdateBookController {
     @PostMapping("/update")
     public String updateBook(@Valid @ModelAttribute("book") BookDTO bookDTO, BindingResult result) {
         if (result.hasFieldErrors("price")) {
-            result.rejectValue("price", null, "Invalid price entered. Please enter a valid number.");
+            result.rejectValue("price", "", "Invalid price entered. Please enter a valid number.");
         }
 
         if (result.hasErrors()) {
