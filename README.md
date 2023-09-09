@@ -18,7 +18,7 @@ The application incorporates Spring Security to implement role-based access cont
 
 - **Update Book**: Admins have the privilege to update the details of existing books, such as the title, author, or ISBN number.
 
-- **Delete Book**: Admins can remove books from the database. This is an irreversible operation and should be used carefully.
+- **Delete Book**: Admins can remove books from the database.
 
 ## Security Measures
 
