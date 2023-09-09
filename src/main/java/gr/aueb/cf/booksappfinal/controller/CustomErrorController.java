@@ -21,9 +21,4 @@ public class CustomErrorController implements ErrorController {
 
         return "/books/error-page";
     }
-
-//    @Override
-//    public String getErrorPath() {
-//        return "/error";
-//    }
 }

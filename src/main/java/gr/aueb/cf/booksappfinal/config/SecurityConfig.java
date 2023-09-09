@@ -10,7 +10,7 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 //@EnableWebSecurity
-public class SecConfig {
+public class SecurityConfig {
 //    private static final String ENCODED_PASSWORD = "$2a$10$mWVKdCmd7M4Qf5HLoEn.n.9DNCrC2yI/tPkFWXPqfmsMimxkuxTHG";
 
     @Bean
